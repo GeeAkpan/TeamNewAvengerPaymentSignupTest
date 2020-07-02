@@ -13,39 +13,151 @@ body{
     background-size: cover;
     height: 100%;
 }
+section{
+    margin-right: 90px;
+    margin-bottom: 297px !important;
+}
 section .container-fluid form{
     background: #fff;
 }
 #intro-text{
     padding: 93px;
 }
+#intro-text2{
+    padding: 50px;
+}
+.card{
+    border-radius: 5px !important;
+}
 .card-top{
-    background: #4263EB;
+    background: #4263EB !important;
     border-radius: 5px 5px 0px 0px;
     padding: 32px;
+    font-size: 20px !important;
 }
 .inactive{
-    font-size: 20px !important;
     padding-top: 5px;
 }
-.inactive a:hover{
+.active, .inactive a:hover{
     font-size: 30px !important;
 }
 a{
     text-decoration: none !important;
 }
-.active{
+.active.active{
     font-size: 30px !important;
 }
-#gridRadios1{
-    width: 28px;
-    height: 28px;
-}
-#gridRadios1 label{
-    font-size: 14px !important;
-    line-height: 21px !important;
+
+.radiobutts{
+   padding-bottom: 30px;
 }
 form button .btn, .btn-primary{
     background: #4263EB !important;
     box-shadow: 0px 1.85609px 3.71218px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 7.42435px !important;
+}
+form button .btn, .btn-primary:hover{
+    background: #283774 !important;
+}
+.form-control{
+    border-radius: 7.42435px !important;
+}
+.form-check a{
+    color: #7048E8 !important
+}
+.form-check a:hover{
+    color: #283774 !important;
+}
+p a{
+    color: #7048E8 !important
+}
+p a:hover{
+    color: #283774 !important;
+}
+/* Media Queries */
+@media only screen and (max-width: 660px){
+    #Zuri-logo{
+        display: none !important;
+    }
+    .card-top{
+        display: none !important;
+    }
+    form{
+        font-size: small;
+    }
+    #intro-text{
+        padding: 20px !important;
+        margin-bottom: 253px !important;
+    }
+    #intro-text .display-2{
+        font-size: 38px !important;
+        font-weight: bolder;
+        padding-top: 53px !important;
+        padding-bottom: 21px !important;
+        display: flex;
+        text-align: center;
+    }
+    #intro-text .display-5{
+        font-size: 21.1px !important;
+    }
+}
+@media only screen and (max-width: 768px){
+    #Zuri-logo{
+        display: none !important;
+    }
+    section{
+        margin: 0 !important;
+        margin-bottom: 253px !important;
+        font-size: small;
+    }
+    .card-top{
+        display: none !important;
+    }
+    form .d-inline-block .py-2{
+        padding: none !important;
+    }
+    section .container-fluid .card{
+        background: rgba(255, 255, 255, 0.589) !important;
+    }
+    section .container-fluid form{
+        background: rgba(255, 255, 255, 0.589) !important;
+    }
+    #intro-text{
+        padding: 20px !important;
+        margin-bottom: 123px !important;
+        width: 78% !important;
+    }
+    #intro-text2{
+        width: 100% !important;
+    }
+    #intro-text .display-2{
+        font-size: 38px !important;
+        font-weight: bolder;
+        padding-top: 53px !important;
+        padding-bottom: 21px !important;
+        display: flex;
+        text-align: center;
+    }
+    #intro-text .display-5{
+        font-size: 21.1px !important;
+    }
+    #intro-text2 .display-3{
+        font-size: 38px !important;
+        font-weight: bolder;
+
+    }
+    #intro-text2 .display-5{
+        font-size: 15px !important;
+    }
+}
+@media only screen and (min-width: 992px){
+    .d-lg-flex{
+        display: none !important;
+    }
+    .card-top h3{
+        font-size: large !important;
+    }
+    .card-top .active{
+        font-size: 22px !important;
+    }
 }
